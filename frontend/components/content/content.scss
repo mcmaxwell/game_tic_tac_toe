@@ -1,0 +1,108 @@
+@import "./frontend/config/app_settings";
+
+.content-component {
+  text-align: center;
+  .game-place {
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .game-grid {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .win-show {
+    display: none;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(222, 222, 222, 0.6);
+    color: black;
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 10;
+    &.active {
+      top: 0;
+      display: flex;
+    }
+  }
+  .game-col {
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    box-shadow: inset 0 0 5px grey;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    &:hover {
+      box-shadow: inset 0 0 20px grey;
+    }
+    &.o,
+    &.x {
+      box-shadow: inset 0 0 20px grey;
+      &::after,
+      &::before {
+        content: "";
+        width: 25px;
+        height: 4px;
+        border-radius: 3px;
+        background: red;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+    &.o {
+      &::after,
+      &::before {
+        border: 4px solid green;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: none;
+        top: 1px;
+        left: 1px;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .inform-block {
+    position: relative;
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px 0;
+    cursor: default;
+    .game-col {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      &.o::after {
+        width: 30px;
+        height: 30px;
+        left: 5px;
+        top: 5px;
+      }
+      &.x::after,
+      &.x::before {
+        width: 50px;
+        height: 8px;
+        top: 20px;
+      }
+    }
+  }
+}
