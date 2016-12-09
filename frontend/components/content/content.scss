@@ -2,6 +2,23 @@
 
 .content-component {
   text-align: center;
+  button {
+    background-color: $main-color;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      background-color: white;
+      color: $main-color;
+      border-color: $main-color;
+    }
+  }
+  .setting {
+    margin: 20px 0;
+  }
   .game-place {
     padding: 10px;
     border-radius: 10px;

@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5d65609354dac2b05488"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d45dcd2b885fec96a2e5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -29777,45 +29777,6 @@
 	      'h1',
 	      null,
 	      '5x5 2 Player Tic-Tac-Toe'
-	    ),
-	    _react2.default.createElement(
-	      'select',
-	      { id: 'field' },
-	      _react2.default.createElement(
-	        'option',
-	        { value: '5' },
-	        '5'
-	      ),
-	      _react2.default.createElement(
-	        'option',
-	        { selected: true, value: '10' },
-	        '10'
-	      ),
-	      _react2.default.createElement(
-	        'option',
-	        { value: '12' },
-	        '12'
-	      ),
-	      _react2.default.createElement(
-	        'option',
-	        { value: '14' },
-	        '14'
-	      ),
-	      _react2.default.createElement(
-	        'option',
-	        { value: '16' },
-	        '16'
-	      ),
-	      _react2.default.createElement(
-	        'option',
-	        { value: '20' },
-	        '20'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'button',
-	      { id: 'restart' },
-	      'Restart'
 	    )
 	  );
 	};
@@ -30318,6 +30279,49 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'game-place' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'setting' },
+	            _react2.default.createElement(
+	              'select',
+	              { id: 'field' },
+	              _react2.default.createElement(
+	                'option',
+	                { value: '5' },
+	                '5'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                { selected: true, value: '10' },
+	                '10'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                { value: '12' },
+	                '12'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                { value: '14' },
+	                '14'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                { value: '16' },
+	                '16'
+	              ),
+	              _react2.default.createElement(
+	                'option',
+	                { value: '20' },
+	                '20'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              { id: 'restart' },
+	              'Restart'
+	            )
+	          ),
 	          _react2.default.createElement('div', { className: 'game-grid' }),
 	          _react2.default.createElement(
 	            'div',

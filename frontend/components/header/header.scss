@@ -4,18 +4,4 @@
   text-align: center;
   height: 35px;
   border-bottom: 1px solid whitesmoke;
-  button {
-    background-color: $main-color;
-    border-radius: 4px;
-    color: white;
-    border: 1px solid transparent;
-    padding: 10px 30px;
-    cursor: pointer;
-    transition: all 0.5s;
-    &:hover {
-      background-color: white;
-      color: $main-color;
-      border-color: $main-color;
-    }
-  }
 }
