@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "90505f7447ab742eb179"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5d65609354dac2b05488"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -29774,8 +29774,18 @@
 	    'div',
 	    { className: 'header-component' },
 	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      '5x5 2 Player Tic-Tac-Toe'
+	    ),
+	    _react2.default.createElement(
 	      'select',
 	      { id: 'field' },
+	      _react2.default.createElement(
+	        'option',
+	        { value: '5' },
+	        '5'
+	      ),
 	      _react2.default.createElement(
 	        'option',
 	        { selected: true, value: '10' },
